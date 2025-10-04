@@ -1,2 +1,2 @@
-# waybar-catpuccin
+# waybar-catppuccin
 A beatiful and minimalistic waybar configuration made for hyprland with workspaces sound clock audio and more!
