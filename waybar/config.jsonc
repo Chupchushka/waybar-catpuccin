@@ -3,9 +3,9 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    "modules-center": ["custom/music"],
-    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
+    "modules-left": ["hyprland/workspaces",  "group/hardware"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["hyprland/language", "pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
   "hyprland/workspaces": {
     "on-click": "activate",
     "sort-by-number": true,
@@ -18,6 +18,12 @@
       "6": "6",
     },
   },
+
+"hyprland/language": {
+  "format": "{}",
+  "format-en": "us",
+  "format-ru": "ru",
+},
 
   "hyprland/window": {
     "format": "{initialTitle}",
@@ -67,5 +73,24 @@
         "tooltip": false,
         "on-click": "wlogout &",
         "format": "⏻"
-    }
+    },
+"group/hardware": {
+	"orientation": "horizontal",
+	"modules": [
+		"cpu",
+		"memory",
+		]
+	},
+
+	"cpu": {
+    		"interval": 10,
+    		"format": " {}%",
+    		"max-length": 10
+	},
+
+	"memory": {
+   		 "interval": 30,
+   		 "format": " {}%",
+   		 "max-length": 10
+	}
 }
