@@ -56,6 +56,30 @@
   margin: 5px 0;
 }
 
+
+#hardware {
+  background-color: @surface0;
+  padding: 0.5rem 1rem;
+  margin: 5px 0px;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+#cpu {
+	margin: 5px 5px;
+}
+
+#memory{
+	margin: 5px 5px;
+}
+
+#language {
+  background-color: @surface0;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+
 #clock {
   color: @blue;
   border-radius: 0px 1rem 1rem 0px;
